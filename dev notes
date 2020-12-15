@@ -3,6 +3,7 @@
     - create board
         - what is best way to create board
         - how to represent light vs dark squares, or is that necessary on the back end
+
     - create pieces
         - pawn
         - knight
