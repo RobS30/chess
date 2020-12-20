@@ -24,12 +24,13 @@ class Chess:
 
     def valid_moves(self):
         """outlines possible moves for selected piece and returns and array of valid moves"""
-        #valid move for pawn
-        #valid move for knight
-        #valid move for bishop
-        #valid move for rook
-        #valid move for queen
-        #valid move for king
+        #valid move for pawn- Moves forward one or two squares on first move, then only one square forward after that.  Attacks on the diagnal.  Cannot move over pieces.
+        #valid move for knight- Moves two vertical and one horizontal, or one vertical and two horizontal.  Can move over pieces.  
+        #valid move for bishop- Moves diagnally forward or backwards.  Cannot move over pieces. 
+        #valid move for rook- Moves vertically or horizontally.  Cannot pass over pieces 
+        #valid move for queen- Can move like a bishop or rook.  Cannot move over pieces.  
+        #valid move for king- Can only move one square in any direction.  Cannot move over pieces
+        #special cases- en passant and castling--king side and queen side
         return True
 
     def is_draw(self):
