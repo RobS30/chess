@@ -1,5 +1,8 @@
 # this handles the rules of the game; it will generate all possible moves and then filter the mvoes down to valid moves
 
+from urllib.parse import non_hierarchical
+
+
 class Chess:
     """hold"""
 
@@ -25,8 +28,6 @@ class Chess:
 
     def print_board(self):
         """used for debugging- prints the board to console alng with key variable values"""
-        
-        
         current_board = self._board
         print(current_board[0])
         print(current_board[1])
@@ -43,6 +44,21 @@ class Chess:
         #check to make sure correct player is playing
         #check to see if piece belongs to player 
         return True
+
+    def undo_move(self):
+        return None
+
+    def can_castle(self):
+        return None
+
+    def get_valid_moves(self):
+        return None
+
+    def is_in_check(self):
+        return None
+
+    def get_squares_under_attack(self):
+        return None
 
     def valid_moves(self):
         """outlines possible moves for selected piece and returns and array of valid moves"""
@@ -72,6 +88,19 @@ class Chess:
 
     def get_rook_moves(self):
         return None
+
+    def get_knight_moves(self):
+        return None
+
+    def get_bishop_moves(self):
+        return None
+
+    def get_king_moves(self):
+        return None
+    
+    def get_queen_moves(self):
+        return None
+
 
 
 game = Chess()
